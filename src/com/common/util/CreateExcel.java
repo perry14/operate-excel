@@ -65,4 +65,12 @@ public class CreateExcel {
 		}
 	}
 
+	/**
+	 * @author Yue
+	 */
+	public static void createExcel() {
+
+		createExcel("test");
+	}
+
 }

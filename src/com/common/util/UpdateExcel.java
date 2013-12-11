@@ -12,14 +12,14 @@ public class UpdateExcel {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void updateExcel(String[] args) {
+
 		try {
 			// Excel获得文件
 			Workbook wb = Workbook.getWorkbook(new File("test.xls"));
 			// 打开一个文件的副本，并且指定数据写回到原文件
-			WritableWorkbook book = Workbook.createWorkbook(new File(
-					"test.xls"), wb);
+			WritableWorkbook book = Workbook.createWorkbook(
+					new File("test.xls"), wb);
 			// 添加一个工作表
 			WritableSheet sheet = book.createSheet("第二页", 1);
 			sheet.addCell(new Label(0, 0, "第二页的测试数据"));

@@ -11,8 +11,8 @@ public class ReadExcel {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void readExcel(String[] args) {
+
 		try {
 			Workbook book = Workbook.getWorkbook(new File("test.xls"));
 			// 获得第一个工作表对象
@@ -21,7 +21,7 @@ public class ReadExcel {
 			Cell cell1 = sheet.getCell(0, 0);
 			String result = cell1.getContents();
 			System.out.println(result);
-			
+
 			// 得到第一列第一行的单元格
 			Cell cell2 = sheet.getCell(1, 0);
 			String result2 = cell2.getContents();
